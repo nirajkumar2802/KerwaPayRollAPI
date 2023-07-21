@@ -14,7 +14,7 @@ namespace KerwaUnitTest
         [Fact]
         public async Task Get_ReturnsOkResult_WithListOfEmployees()
         {
-            // Arrange//
+            // Arrange
             var mockRepo = new Mock<IKerwaEmployeeRepo>();
             var expectedEmployees = new List<KerwaEmployee>
             {
