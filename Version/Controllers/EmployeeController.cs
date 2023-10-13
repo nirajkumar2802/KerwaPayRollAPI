@@ -6,9 +6,10 @@ using Version.InfraStructure;
 
 namespace Version.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
+    
     public class EmployeeController : ControllerBase
     {
         private readonly InfraStructure.IKerwaEmployeeRepo _kerwaEmployeeRepo;
